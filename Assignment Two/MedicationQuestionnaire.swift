@@ -28,21 +28,54 @@ struct MedicationQuestionnaire {
         
         // Q1
         let firstStepAnswerFormat = ORKBooleanAnswerFormat()
-        let firstStep = ORKQuestionStep(identifier: "Q1", title: "Q1", question: "Do you have your medications currently?", answer: firstStepAnswerFormat)
+        let firstStep = ORKQuestionStep(identifier: "Q1", title: "Medications", question: "Do you have your medications currently?", answer: firstStepAnswerFormat)
         steps.append(firstStep)
         
         // Q2
-        let secondStep = ORKQuestionStep(identifier: "Q2", title: "Q2", question: "How many medications do you currently take for heart problems?", answer: ORKAnswerFormat.decimalAnswerFormat(withUnit: nil))
+        let secondStep = ORKQuestionStep(identifier: "Q2", title: "Medications", question: "How many medications do you currently take for heart problems?", answer: ORKAnswerFormat.decimalAnswerFormat(withUnit: nil))
         steps.append(secondStep)
         
         // Q3
         let thirdStepAnswerFormat = ORKBooleanAnswerFormat()
-        let thirdStep = ORKQuestionStep(identifier: "Q3", title: "Q3", question: "Have you stopped taking any medications for heart problems in the last 6 months?", answer: thirdStepAnswerFormat)
+        let thirdStep = ORKQuestionStep(identifier: "Q3", title: "Medications", question: "Have you stopped taking any medications for heart problems in the last 6 months?", answer: thirdStepAnswerFormat)
+        thirdStep.isOptional = false
         steps.append(thirdStep)
+        
+        // automatically generate stopped form for 5 drugs
+        for index in 0...5 {
+            // Q4
+            let stoppedStep = ORKFormStep(identifier: "Q4-\(index)", title: "Stopped Drug \(index + 1)", text: "What heart medication was stopped?")
+            
+            // name of the drug
+            let drugNameAnswerFormat = ORKAnswerFormat.textAnswerFormat()
+            let drugNameSection = ORKFormItem(sectionTitle: "Please enter the name of the drug:")
+            let drugNameQ = ORKFormItem(identifier: "Q4-drug-\(index)", text: nil, answerFormat: drugNameAnswerFormat)
+            
+            // reason it was stopped
+            let drugDateAnswerFormat = ORKAnswerFormat.textAnswerFormat()
+            let drugDateSection = ORKFormItem(sectionTitle: "Reason it was stopped:")
+            let drugDateQ = ORKFormItem(identifier: "Q4-reason-\(index)", text: nil, answerFormat: drugDateAnswerFormat)
+            
+            stoppedStep.formItems = [
+                drugNameSection,
+                drugNameQ,
+                drugDateSection,
+                drugDateQ
+            ]
+            steps.append(stoppedStep)
+            
+            if index < 5 {
+                // Check if we have more stopped drugs to report
+                let extraDrugStep = ORKQuestionStep(identifier: "MoreStopped?-\(index)", title: "", question: "Have you stopped taking any other drugs?", answer: ORKBooleanAnswerFormat())
+                extraDrugStep.isOptional = false
+                steps.append(extraDrugStep)
+            }
+        }
+        
         
         // automatically generate forms for 20 drugs
         for index in 0...20 {
-            // Q4 - build out the form for a specific drug
+            // build out the form for a specific drug
             let drugStep = ORKFormStep(identifier: "drug-entry-\(index)", title: "Current Drug \(index + 1)", text: "Enter a medication that you currently take for high blood pressure")
             
             // name of the drug
@@ -159,6 +192,7 @@ struct MedicationQuestionnaire {
         
         let ret_value = ORKNavigableOrderedTask(identifier: "SurveyTask-Assessment", steps: steps)
         
+        // rules for drug forms
         for index in 0...19 {
             // Navigation Rule
             let resultSelector = ORKResultSelector(resultIdentifier: "MoreDrugs?-\(index)")
@@ -168,6 +202,23 @@ struct MedicationQuestionnaire {
             
             ret_value.setNavigationRule(predicateRule, forTriggerStepIdentifier: "MoreDrugs?-\(index)")
         }
+        
+        // rules for stopped drug forms
+        for index in 0...4 {
+            let resultSelector = ORKResultSelector(resultIdentifier: "MoreStopped?-\(index)")
+            let predicateAnswerType = ORKResultPredicate.predicateForBooleanQuestionResult(with: resultSelector, expectedAnswer: true)
+
+            let predicateRule = ORKPredicateStepNavigationRule(resultPredicates: [predicateAnswerType], destinationStepIdentifiers: ["Q4-\(index + 1)"], defaultStepIdentifier: "drug-entry-0", validateArrays: true)
+            
+            ret_value.setNavigationRule(predicateRule, forTriggerStepIdentifier: "MoreStopped?-\(index)")
+        }
+        
+        // rule for stopping any drugs
+        let resultSelector = ORKResultSelector(resultIdentifier: "Q3")
+        let predicateAnswerType = ORKResultPredicate.predicateForBooleanQuestionResult(with: resultSelector, expectedAnswer: true)
+        
+        let predicateRule = ORKPredicateStepNavigationRule(resultPredicates: [predicateAnswerType], destinationStepIdentifiers: ["Q4-0"], defaultStepIdentifier: "drug-entry-0", validateArrays: true)
+        ret_value.setNavigationRule(predicateRule, forTriggerStepIdentifier: "Q3")
         
         return ret_value
     }()
