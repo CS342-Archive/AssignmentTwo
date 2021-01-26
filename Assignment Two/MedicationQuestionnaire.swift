@@ -18,6 +18,7 @@ struct MedicationQuestionnaire {
      Sample task template!
     */
     static let form: ORKOrderedTask = {
+        
         var steps = [ORKStep]()
         
         /*
@@ -26,13 +27,18 @@ struct MedicationQuestionnaire {
          */
         
         // Q1
-        let firstStepAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 1, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "Excellent", minimumValueDescription: "Poor")
-        let firstStep = ORKQuestionStep(identifier: "SF-12-1", title: "Patient Questionnaire", question: "In general, how would you describe your health?", answer: firstStepAnswerFormat)
+        let firstStepAnswerFormat = ORKBooleanAnswerFormat()
+        let firstStep = ORKQuestionStep(identifier: "Q1", title: "Do you have your medications currently?", answer: firstStepAnswerFormat)
         steps.append(firstStep)
         
         // Q2
+        let secondStep = ORKQuestionStep(identifier: "Q2", title: "How many medications do you currently take for heart problems?", answer: ORKAnswerFormat.decimalAnswerFormat(withUnit: nil))
+        steps.append(secondStep)
         
         // Q3
+        let thirdStepAnswerFormat = ORKBooleanAnswerFormat()
+        let thirdStep = ORKQuestionStep(identifier: "Q3", title: "Have you stopped taking any medications for heart problems in the last 6 months?", answer: thirdStepAnswerFormat)
+        steps.append(thirdStep)
         
         // Q4
         
