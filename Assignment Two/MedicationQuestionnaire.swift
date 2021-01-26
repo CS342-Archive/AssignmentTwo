@@ -46,7 +46,7 @@ struct MedicationQuestionnaire {
         // automatically generate forms for 20 drugs
         for index in 0...20 {
             // Q4 - build out the form for a specific drug
-            let drugStep = ORKFormStep(identifier: "drug-entry-\(index)", title: "Current Drug \(index)", text: "Enter a medication that you currently take for high blood pressure")
+            let drugStep = ORKFormStep(identifier: "drug-entry-\(index + 1)", title: "Current Drug \(index)", text: "Enter a medication that you currently take for high blood pressure")
             
             // name of the drug
             let drugNameAnswerFormat = ORKAnswerFormat.textAnswerFormat()
