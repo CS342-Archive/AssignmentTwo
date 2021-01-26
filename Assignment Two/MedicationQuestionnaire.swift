@@ -28,16 +28,16 @@ struct MedicationQuestionnaire {
         
         // Q1
         let firstStepAnswerFormat = ORKBooleanAnswerFormat()
-        let firstStep = ORKQuestionStep(identifier: "Q1", title: "Do you have your medications currently?", answer: firstStepAnswerFormat)
+        let firstStep = ORKQuestionStep(identifier: "Q1", title: "Q1", question: "Do you have your medications currently?", answer: firstStepAnswerFormat)
         steps.append(firstStep)
         
         // Q2
-        let secondStep = ORKQuestionStep(identifier: "Q2", title: "How many medications do you currently take for heart problems?", answer: ORKAnswerFormat.decimalAnswerFormat(withUnit: nil))
+        let secondStep = ORKQuestionStep(identifier: "Q2", title: "Q2", question: "How many medications do you currently take for heart problems?", answer: ORKAnswerFormat.decimalAnswerFormat(withUnit: nil))
         steps.append(secondStep)
         
         // Q3
         let thirdStepAnswerFormat = ORKBooleanAnswerFormat()
-        let thirdStep = ORKQuestionStep(identifier: "Q3", title: "Have you stopped taking any medications for heart problems in the last 6 months?", answer: thirdStepAnswerFormat)
+        let thirdStep = ORKQuestionStep(identifier: "Q3", title: "Q3", question: "Have you stopped taking any medications for heart problems in the last 6 months?", answer: thirdStepAnswerFormat)
         steps.append(thirdStep)
         
         // Q4
