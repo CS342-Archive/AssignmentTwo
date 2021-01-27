@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		63A3CE7CD4FC0CCD0333F867 /* Pods_Assignment_Two.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DE9A4430C3A45320910A5E /* Pods_Assignment_Two.framework */; };
 		8E0A956625B6767B0025461E /* CKTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A956525B6767B0025461E /* CKTaskViewController.swift */; };
-		8E0A956925B677950025461E /* RKTaskSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A956825B677950025461E /* RKTaskSamples.swift */; };
+		8E0A956925B677950025461E /* GeneralPatientQuestionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A956825B677950025461E /* GeneralPatientQuestionnaire.swift */; };
 		8E35408925B8FE3A007B7029 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35408825B8FE3A007B7029 /* SurveyView.swift */; };
 		8E35408D25B8FFC9007B7029 /* RoundedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35408C25B8FFC9007B7029 /* RoundedTextView.swift */; };
 		8E35409625B90E80007B7029 /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E35409425B90E80007B7029 /* ORKESerialization.m */; };
@@ -20,12 +20,14 @@
 		8EF8F77D2597C7DE000850BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8F77C2597C7DE000850BF /* ContentView.swift */; };
 		8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF8F77E2597C7E1000850BF /* Assets.xcassets */; };
 		8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF8F7812597C7E1000850BF /* Preview Assets.xcassets */; };
+		FD472A5425BFC1F400F6A49A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD472A5325BFC1F400F6A49A /* GoogleService-Info.plist */; };
+		FD472A5A25BFC75400F6A49A /* MedicationQuestionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD472A5925BFC75400F6A49A /* MedicationQuestionnaire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4483BDF88A5E2878F34C059F /* Pods-Assignment Two.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment Two.release.xcconfig"; path = "Target Support Files/Pods-Assignment Two/Pods-Assignment Two.release.xcconfig"; sourceTree = "<group>"; };
 		8E0A956525B6767B0025461E /* CKTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTaskViewController.swift; sourceTree = "<group>"; };
-		8E0A956825B677950025461E /* RKTaskSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKTaskSamples.swift; sourceTree = "<group>"; };
+		8E0A956825B677950025461E /* GeneralPatientQuestionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPatientQuestionnaire.swift; sourceTree = "<group>"; };
 		8E35408825B8FE3A007B7029 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
 		8E35408C25B8FFC9007B7029 /* RoundedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextView.swift; sourceTree = "<group>"; };
 		8E35409325B90E7F007B7029 /* Assignment Two-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment Two-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		8EF8F7812597C7E1000850BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EF8F7832597C7E1000850BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7DE9A4430C3A45320910A5E /* Pods_Assignment_Two.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Two.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD472A5325BFC1F400F6A49A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD472A5925BFC75400F6A49A /* MedicationQuestionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationQuestionnaire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		8EF8F76E2597C7DE000850BF = {
 			isa = PBXGroup;
 			children = (
+				FD472A5325BFC1F400F6A49A /* GoogleService-Info.plist */,
 				8EF8F7792597C7DE000850BF /* Assignment Two */,
 				8EF8F7782597C7DE000850BF /* Products */,
 				BC78C6756808D892DF11E798 /* Pods */,
@@ -123,7 +128,8 @@
 				8E35408B25B8FEF2007B7029 /* Views */,
 				8EF8F77A2597C7DE000850BF /* Assignment_TwoApp.swift */,
 				8E35409825B90F1B007B7029 /* RKTaskDelegate.swift */,
-				8E0A956825B677950025461E /* RKTaskSamples.swift */,
+				8E0A956825B677950025461E /* GeneralPatientQuestionnaire.swift */,
+				FD472A5925BFC75400F6A49A /* MedicationQuestionnaire.swift */,
 			);
 			path = "Assignment Two";
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 			files = (
 				8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */,
 				8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */,
+				FD472A5425BFC1F400F6A49A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8775DD25B8F8B800AB350A /* HeaderView.swift in Sources */,
-				8E0A956925B677950025461E /* RKTaskSamples.swift in Sources */,
+				8E0A956925B677950025461E /* GeneralPatientQuestionnaire.swift in Sources */,
 				8E35409D25B90F7A007B7029 /* CKStudyUser.swift in Sources */,
 				8E35408925B8FE3A007B7029 /* SurveyView.swift in Sources */,
 				8EF8F77D2597C7DE000850BF /* ContentView.swift in Sources */,
@@ -276,6 +283,7 @@
 				8E35409625B90E80007B7029 /* ORKESerialization.m in Sources */,
 				8E0A956625B6767B0025461E /* CKTaskViewController.swift in Sources */,
 				8EF8F77B2597C7DE000850BF /* Assignment_TwoApp.swift in Sources */,
+				FD472A5A25BFC75400F6A49A /* MedicationQuestionnaire.swift in Sources */,
 				8E35409925B90F1B007B7029 /* RKTaskDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,7 +416,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment Two/Preview Content\"";
-				DEVELOPMENT_TEAM = CQRZ4E7K9U;
+				DEVELOPMENT_TEAM = Z7SA65KY4V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Assignment Two/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -416,7 +424,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two-CCH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Assignment Two/Supporting Files/Assignment Two-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -434,7 +442,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment Two/Preview Content\"";
-				DEVELOPMENT_TEAM = CQRZ4E7K9U;
+				DEVELOPMENT_TEAM = Z7SA65KY4V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Assignment Two/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -442,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two-CCH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Assignment Two/Supporting Files/Assignment Two-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

@@ -36,9 +36,21 @@ struct SurveyView: View {
                     The task must conform to the ORKOrderedTask class.
                  */
                 
-                // surveyOptional = /* my ORKOrderedTask */
+                surveyOptional = GeneralPatientQuestionnaire.form
             }) {
-                RoundedTextView("Start Survey", backgroundColor: .red)
+                RoundedTextView("Start General Patient Questionnaire", backgroundColor: .red)
+            }
+            
+            Button(action: {
+                /*
+                    CS342 -- ASSIGNMENT 2
+                    Set surveyOptional to any ResearchKit task of your choice!
+                    The task must conform to the ORKOrderedTask class.
+                 */
+                
+                surveyOptional = MedicationQuestionnaire.form
+            }) {
+                RoundedTextView("Start Medication Questionnaire", backgroundColor: .blue)
             }
             
             Spacer()
