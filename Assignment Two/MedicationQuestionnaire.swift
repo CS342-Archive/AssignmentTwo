@@ -26,6 +26,13 @@ struct MedicationQuestionnaire {
             Add steps to the array above to create a survey!
          */
         
+        let instructionStep = ORKInstructionStep(identifier: "Introstep")
+        instructionStep.title = "BMQ-1 Patient Questionnaire"
+        instructionStep.text = "Welcome"
+        instructionStep.image = UIImage(named: "doctor")
+        instructionStep.detailText = "This form asks about the medications you currently take for high blood pressure. Please include any medication that you might be taking for high blood pressure, including water pills."
+        steps.append(instructionStep)
+        
         // Q1
         let firstStepAnswerFormat = ORKBooleanAnswerFormat()
         let firstStep = ORKQuestionStep(identifier: "Q1", title: "Medications", question: "Do you have your medications currently?", answer: firstStepAnswerFormat)
