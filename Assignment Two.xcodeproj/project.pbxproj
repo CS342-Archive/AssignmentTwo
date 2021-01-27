@@ -416,7 +416,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment Two/Preview Content\"";
-				DEVELOPMENT_TEAM = CQRZ4E7K9U;
+				DEVELOPMENT_TEAM = Z7SA65KY4V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Assignment Two/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -424,7 +424,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two-CCH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Assignment Two/Supporting Files/Assignment Two-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -442,7 +442,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment Two/Preview Content\"";
-				DEVELOPMENT_TEAM = CQRZ4E7K9U;
+				DEVELOPMENT_TEAM = Z7SA65KY4V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Assignment Two/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -450,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two-CCH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Assignment Two/Supporting Files/Assignment Two-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
