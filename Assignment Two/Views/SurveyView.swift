@@ -11,7 +11,7 @@ import SwiftUI
 import ResearchKit
 
 struct SurveyView: View {
-    
+    // Start survey button
     @State var taskController: CKTaskViewController? = nil
     @State var surveyOptional: ORKOrderedTask? = nil {
         didSet {
@@ -37,6 +37,7 @@ struct SurveyView: View {
                  */
                 
                 // surveyOptional = /* my ORKOrderedTask */
+                surveyOptional = RKTaskSamples.sampleSurveyTask
             }) {
                 RoundedTextView("Start Survey", backgroundColor: .red)
             }
