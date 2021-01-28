@@ -19,11 +19,11 @@ extension CKTaskCoordinator: ORKTaskViewControllerDelegate {
                  if let json = try CKTaskResultAsJson(taskViewController.result) {
                      
                      // (2) send using Firebase
-//                     try CKSendJSON(json)
+                     try CKSendJSON(json)
                      
                      // (3) if we have any files, send those using Google Storage
                      if let associatedFiles = taskViewController.outputDirectory {
-//                         try CKSendFiles(associatedFiles, result: json)
+                         try CKSendFiles(associatedFiles, result: json)
                      }
                  }
              } catch {
