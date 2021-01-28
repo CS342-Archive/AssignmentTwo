@@ -23,8 +23,8 @@ struct Assignment_TwoApp: App {
         //  (2) open the Auth section
         //  (3) On the Sign-in Methods page, enable the Anonymous sign-in method.
         
-        FirebaseApp.configure()
-        Auth.auth().signInAnonymously()
+         FirebaseApp.configure()
+         Auth.auth().signInAnonymously()
         
     }
     
