@@ -54,6 +54,8 @@ struct ContentView: View {
                 HStack {
                     ZStack {
                         
+                        Text("No more cards for today!").frame(maxWidth: .infinity, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
                         ForEach(self.cards.reversed(), id: \.self) { curr_card in
                             CardView(card: curr_card, onRemove: { removedCard in
                                 // Remove that user from our array
@@ -62,7 +64,10 @@ struct ContentView: View {
                                 .offset(x: 0, y: self.getCardOffset(geometry, id: curr_card.id))
                         }
                         
+
                     }
+
+
                     
                 }
             }
