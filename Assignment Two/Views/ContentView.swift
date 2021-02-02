@@ -9,11 +9,14 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
-    
     var body: some View {
         VStack {
             HeaderView()
+
+            CardStackView()
             
             SurveyView(backgroundColor: Color.gray.opacity(0.2))
             

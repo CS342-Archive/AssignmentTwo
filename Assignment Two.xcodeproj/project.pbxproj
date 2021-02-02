@@ -20,6 +20,10 @@
 		8EF8F77D2597C7DE000850BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8F77C2597C7DE000850BF /* ContentView.swift */; };
 		8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF8F77E2597C7E1000850BF /* Assets.xcassets */; };
 		8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF8F7812597C7E1000850BF /* Preview Assets.xcassets */; };
+		BCC44AF625C9358E00384FC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCC44AF525C9358E00384FC6 /* GoogleService-Info.plist */; };
+		BCC44AFA25C935A100384FC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCC44AF925C935A100384FC6 /* GoogleService-Info.plist */; };
+		BCC44AFE25C93E3900384FC6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC44AFD25C93E3900384FC6 /* CardView.swift */; };
+		BCC44B0125C9F5D700384FC6 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC44B0025C9F5D700384FC6 /* CardStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		8EF8F77E2597C7E1000850BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EF8F7812597C7E1000850BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EF8F7832597C7E1000850BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC44AF525C9358E00384FC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BCC44AF925C935A100384FC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BCC44AFD25C93E3900384FC6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BCC44B0025C9F5D700384FC6 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 		E7DE9A4430C3A45320910A5E /* Pods_Assignment_Two.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Two.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,9 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				8EF8F77C2597C7DE000850BF /* ContentView.swift */,
+				BCC44B0025C9F5D700384FC6 /* CardStackView.swift */,
 				8E8775DC25B8F8B800AB350A /* HeaderView.swift */,
 				8E35408825B8FE3A007B7029 /* SurveyView.swift */,
 				8E35408C25B8FFC9007B7029 /* RoundedTextView.swift */,
+				BCC44AFD25C93E3900384FC6 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +134,8 @@
 				8EF8F77A2597C7DE000850BF /* Assignment_TwoApp.swift */,
 				8E35409825B90F1B007B7029 /* RKTaskDelegate.swift */,
 				8E0A956825B677950025461E /* RKTaskSamples.swift */,
+				BCC44AF925C935A100384FC6 /* GoogleService-Info.plist */,
+				BCC44AF525C9358E00384FC6 /* GoogleService-Info.plist */,
 			);
 			path = "Assignment Two";
 			sourceTree = "<group>";
@@ -214,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */,
+				BCC44AFA25C935A100384FC6 /* GoogleService-Info.plist in Resources */,
+				BCC44AF625C9358E00384FC6 /* GoogleService-Info.plist in Resources */,
 				8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +290,8 @@
 				8E35409625B90E80007B7029 /* ORKESerialization.m in Sources */,
 				8E0A956625B6767B0025461E /* CKTaskViewController.swift in Sources */,
 				8EF8F77B2597C7DE000850BF /* Assignment_TwoApp.swift in Sources */,
+				BCC44B0125C9F5D700384FC6 /* CardStackView.swift in Sources */,
+				BCC44AFE25C93E3900384FC6 /* CardView.swift in Sources */,
 				8E35409925B90F1B007B7029 /* RKTaskDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +432,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stanfordhcilab.hpdslongitudinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Assignment Two/Supporting Files/Assignment Two-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -442,7 +458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stanfordhcilab.hpdslongitudinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Assignment Two/Supporting Files/Assignment Two-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

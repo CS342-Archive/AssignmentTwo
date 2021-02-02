@@ -20,14 +20,14 @@ struct HeaderView: View {
     var body: some View {
         VStack {
             HStack {
+                Spacer()
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 100, alignment: .leading)
-                Spacer()
             }.padding(.horizontal, 20.0)
             HStack {
-                Text("Survey Tool")
+                Text("Experience Sampling")
                     .font(.system(.largeTitle))
                     .bold()
                     .multilineTextAlignment(.leading)
@@ -36,13 +36,11 @@ struct HeaderView: View {
             }
             HStack {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("This tool lets us create awesome ResearchKit surveys!")
-                        .minimumScaleFactor(0.5)
-                    Text("Let's all look out for each other by wearing a mask, avoiding crowds, and by knowing our status.")
+                    Text("Please take a moment to fill out this quick survey!")
                         .minimumScaleFactor(0.5)
                 }
                 Spacer()
-                Image("doctor").resizable().scaledToFit().frame(width: 150)
+                Image("HPDS-cover-image").resizable().scaledToFit().frame(width: 150)
             }.padding(.horizontal, 20.0)
             
         }.background(color)
