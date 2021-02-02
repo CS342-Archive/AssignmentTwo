@@ -23,6 +23,7 @@
 		BCC44AF625C9358E00384FC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCC44AF525C9358E00384FC6 /* GoogleService-Info.plist */; };
 		BCC44AFA25C935A100384FC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCC44AF925C935A100384FC6 /* GoogleService-Info.plist */; };
 		BCC44AFE25C93E3900384FC6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC44AFD25C93E3900384FC6 /* CardView.swift */; };
+		BCC44B0125C9F5D700384FC6 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC44B0025C9F5D700384FC6 /* CardStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		BCC44AF525C9358E00384FC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCC44AF925C935A100384FC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCC44AFD25C93E3900384FC6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BCC44B0025C9F5D700384FC6 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 		E7DE9A4430C3A45320910A5E /* Pods_Assignment_Two.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Two.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				8EF8F77C2597C7DE000850BF /* ContentView.swift */,
+				BCC44B0025C9F5D700384FC6 /* CardStackView.swift */,
 				8E8775DC25B8F8B800AB350A /* HeaderView.swift */,
 				8E35408825B8FE3A007B7029 /* SurveyView.swift */,
 				8E35408C25B8FFC9007B7029 /* RoundedTextView.swift */,
@@ -287,6 +290,7 @@
 				8E35409625B90E80007B7029 /* ORKESerialization.m in Sources */,
 				8E0A956625B6767B0025461E /* CKTaskViewController.swift in Sources */,
 				8EF8F77B2597C7DE000850BF /* Assignment_TwoApp.swift in Sources */,
+				BCC44B0125C9F5D700384FC6 /* CardStackView.swift in Sources */,
 				BCC44AFE25C93E3900384FC6 /* CardView.swift in Sources */,
 				8E35409925B90F1B007B7029 /* RKTaskDelegate.swift in Sources */,
 			);

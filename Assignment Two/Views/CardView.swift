@@ -39,12 +39,15 @@ struct CardView: View {
                 Image(self.card.imageName)
                     .resizable()
                     .frame(width: UIScreen.screenWidth*0.32, height: UIScreen.screenWidth*0.28)
+                    .padding()
                 
                 HStack {
                     VStack {
                         Text("\(self.card.title)")
-                            .font(.title)
+                            .font(.system(size: 25))
                             .bold()
+                            .multilineTextAlignment(.center)
+
                     }
                 }.frame(width: UIScreen.screenWidth*0.8, height: UIScreen.screenHeight*0.07)
             }
