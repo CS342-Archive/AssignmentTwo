@@ -36,9 +36,7 @@ struct HeaderView: View {
             }
             HStack {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("This tool lets us create awesome ResearchKit surveys!")
-                        .minimumScaleFactor(0.5)
-                    Text("Let's all look out for each other by wearing a mask, avoiding crowds, and by knowing our status.")
+                    Text("Please take a moment to fill out this quick survey!")
                         .minimumScaleFactor(0.5)
                 }
                 Spacer()
