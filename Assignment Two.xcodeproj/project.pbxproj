@@ -20,6 +20,7 @@
 		8EF8F77D2597C7DE000850BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8F77C2597C7DE000850BF /* ContentView.swift */; };
 		8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF8F77E2597C7E1000850BF /* Assets.xcassets */; };
 		8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF8F7812597C7E1000850BF /* Preview Assets.xcassets */; };
+		BC15E97125C0F53C00927BA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC15E97025C0F53C00927BA9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		8EF8F77E2597C7E1000850BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EF8F7812597C7E1000850BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EF8F7832597C7E1000850BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC15E97025C0F53C00927BA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7DE9A4430C3A45320910A5E /* Pods_Assignment_Two.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Two.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				8EF8F77A2597C7DE000850BF /* Assignment_TwoApp.swift */,
 				8E35409825B90F1B007B7029 /* RKTaskDelegate.swift */,
 				8E0A956825B677950025461E /* RKTaskSamples.swift */,
+				BC15E97025C0F53C00927BA9 /* GoogleService-Info.plist */,
 			);
 			path = "Assignment Two";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				8EF8F7822597C7E1000850BF /* Preview Assets.xcassets in Resources */,
 				8EF8F77F2597C7E1000850BF /* Assets.xcassets in Resources */,
+				BC15E97125C0F53C00927BA9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +420,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.demo-firebase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Assignment Two/Supporting Files/Assignment Two-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -442,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.Assignment-Two";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.demo-firebase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Assignment Two/Supporting Files/Assignment Two-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

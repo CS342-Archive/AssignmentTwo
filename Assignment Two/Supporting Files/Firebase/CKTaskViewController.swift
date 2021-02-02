@@ -10,6 +10,8 @@ import UIKit
 import SwiftUI
 import ResearchKit
 import Firebase
+import FirebaseFirestore
+import FirebaseStorage
 
 struct CKTaskViewController: UIViewControllerRepresentable, Identifiable {
     
